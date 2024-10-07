@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100vw;
+    height: 95vh;
+     background-image: url(./update.jpg);
+     background-size: cover;
+     background-position: center;
+     border: 1px solid #000;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     flex-direction: column;
+     padding: 0;
+}
+.nav{
+    padding-top: 15px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav .ad{
+    padding-block-start: 5px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav .ad h1{
+    display: flex;
+    font-size: 25px;
+    margin: 0;
+}
+.nav .ad .y-dott{
+    margin-inline-start: 5px;
+    width: 13px;
+    height: 13px;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: yellow;
+    color: yellow;
+}
+.nav .ad p{
+    font-size: 14px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+.nav ul li a:hover{
+    color: black;
+    font-size: 16px;
+    transition: all ease-in-out 0.3s;
+    font-weight: bolder;
+}
+.nav button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid gray;
+}
+/* nav closed */
+
+.pynvj{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.pynvj h1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.pynvj p{
+    color: gray;
+}
+.pynvj button{
+    font-weight: bold;
+}
+/* pynvj closed */
+
+@media (max-width: 768px) {
+    .container{
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .nav ul{
+        display: none;
+    }
+    .pynvj{
+        margin-top: 25px;
+        gap: 7px;
+    }
+    .pynvj h1 br{
+        display: none;
+    }
+    .pynvj h1{
+        font-size: 30px;
+    }
+}
